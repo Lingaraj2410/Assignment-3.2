@@ -1,6 +1,7 @@
 # Problem Statement:
 
 We have a dataset of sales of different TV sets across different locations.
+
 Records look like:
 Samsung|Optima|14|Madhya Pradesh|132401|14200
 
