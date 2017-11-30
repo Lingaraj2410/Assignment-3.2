@@ -1,7 +1,6 @@
 package org.acadgild;
 
 import java.io.IOException;
-
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
@@ -12,9 +11,7 @@ public class MapperClass extends Mapper <LongWritable, Text, NullWritable, Text>
 	
 	public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
 	{
-		System.out.println("value: "+value);
 		String line = value.toString();
-		System.out.println("line: "+line);
 		if(line.length()>0)
 		{
 			String[] fields = line.split("\\|");
